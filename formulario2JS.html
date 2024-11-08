@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Pagina que recoge un texto em cuadro de texto y lo convierte a mayusculas segun va esvribiendo el usuario-->
+<body>
+    <form action="">
+        <fieldset> 
+            <legend>Escribe algo</legend> 
+            <label for="texto">Texto: </label>
+            <!--  <input id="texto" onkeyup="toUpperCase()">  -->
+            <!--  <input id="texto" onkeyup="toUpperCasePropioElemento(this)">  --> 
+            <input id="texto" onkeyup=this.value=this.value.toUpperCase()>
+            <!-- hemos escrito directamente la linea de la funcion del js aqui -->
+        </fieldset>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

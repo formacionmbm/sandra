@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Primer formulario</title>
+    </head>
+    <body>
+        <form id="fdatospersonales", name="fdatospersonales", action="#", method="post"> <!-- # es para que me lo mande a mi mismo -->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required/> <!-- el required: si no relleno el capo no me deja mandarlo -->
+            <label for="fnacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fnacimiento" id="fnacimiento"/>
+            <label for="fcolor">Color favorito</label>
+            <input type="color" name="fcolor" id="fcolor"/> <!-- Sale una paleta de color para que elijas y te lo guarda en hexadecimal-->
+            <label for="fhora">Hora</label>
+            <input type="time" name="fhora" id="fhora"/>
+            <label for="fcurso">Curso</label>
+            <select name="fcurso" id="fcurso">  
+                <option value="1">POO</option> <!-- se va a mandar el numero de la opcion elegida, no el texto -->
+                <option value="2">Bases de datos</option>
+                <option value="3">AWS</option>
+            </select>  
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
+<!-- todos los campos rellenados que se envian se ven arriba en la barra del navegador -->

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--UTF-8 es el castelllano, para que tenga ñ y de todo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Pagina que recoge un texto em cuadro de texto y lo convierte a mayusculas-->
+<body>
+    <form action="">
+        <fieldset> <!-- hace como un cuadro, para que quede bonito-->
+            <legend>Escribe algo</legend> <!--el legend pertenece al fieldset-->
+            <label for="texto">Texto: </label> <!-- for tiene que ser el id del elemento que quiero enlazar (en este caso el input de abajo)-->
+            <input id="texto"></label> 
+            <!-- <input type="textarea" id="texto" name="texto"></label> id es necesario, pero podria funcionar sin name,type en este caso tampoco es necesario porque por defecto es texto-->
+            <button type="button" onclick="toUpperCase()">Poner mayusculas</button> 
+            <!--<button id="boton" type="button">Poner mayusculas</button> el boton opr defecto es un submit-->
+        </fieldset>
+    </form>
+    <script src="app.js"></script> <!--pongo un script por cada-->
+    <!--usare ese aaaarchivo (la funcion) cuando pulse el boton. Si pongo esto abajo del todo me aseguro de que para usarla, el boton ya estara cargado (y toda la pagina)
+    Si lo pusiera arriba correria el riesgo de que el boton u otros elements de la pagina o estuvieran aun cargados todos-->
+</body>
+</html>

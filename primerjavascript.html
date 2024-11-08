@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Primer javascript</title>
+        <script> // esto es javascript
+            function mifuncion(mensaje){
+                alert(mensaje);
+                console.log(mensaje);
+                let nombre = "pepe";
+                console.log("Le he puesto una traza a "+nombre);
+                //document.getElementById("nombre").value = "Mi nombre" --> rellena el nombre con 'Mi nombre'
+            }
+        </script>
+    </head>
+    <body>
+        <form id="fdatospersonales", name="fdatospersonales", action="#", method="post"> 
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required, onclick="mifuncion('Has pulsado el nombre')" required/>
+            <!-- onclick="alert('Has pulsado el nombre')" 
+            onclick es un evento raro, es un handler(manejador). Escucha si se produce el evento o no y si se produce hace algo (lo que esta en las comillas del  onclick)
+            dentro del onclick meto una funcion, suele ser javascript. Alert es una funcion para avisar al usuario-->
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required, onclick="console.log('Has pulsado el apellido')"/>
+            <!-- ahora uso la funcion console.log y no alert. Ahora no aviso al usuario is no al desarrollador por asi decirlo, 
+             es una traza y sale en la consola del navegador al pulsar el apellido y las veces que lo has pulsado-->
+            <label for="fnacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fnacimiento" id="fnacimiento"/> 
+            <label for="fcolor">Color favorito</label>                              
+            <input type="color" name="fcolor" id="fcolor"/> 
+            <label for="fhora">Hora</label>
+            <input type="time" name="fhora" id="fhora"/>
+            <label for="fcurso">Curso</label>
+            <select name="fcurso" id="fcurso">  
+                <option value="1">POO</option>
+                <option value="2">Bases de datos</option>
+                <option value="3">AWS</option>
+            </select>  
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
